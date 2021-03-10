@@ -2,8 +2,8 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
 
-i = int(input("How many times u have to spam: "))
-num = str(input("Enter the number:- "))
+i = int(input("How Many Times u have to send [per site]: "))
+num = str(input("Enter the Phone Number [no need to specify '+91']: "))
 chrome_options = webdriver.ChromeOptions()
 chrome_options.add_argument("--incognito")
 browser = webdriver.Chrome("chromedriver",chrome_options=chrome_options)
