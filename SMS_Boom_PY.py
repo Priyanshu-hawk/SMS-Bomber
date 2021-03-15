@@ -6,7 +6,13 @@ i = int(input("How Many Times u have to send [per site]: "))
 num = str(input("Enter the Phone Number [no need to specify '+91']: "))
 chrome_options = webdriver.ChromeOptions()
 chrome_options.add_argument("--incognito")
-browser = webdriver.Chrome("chromedriver",chrome_options=chrome_options)
+
+#change "chromedriver" path to full path if not work
+#eg1 - "E:\\file_name\\File\\chromedriver"  <++ IN WINDOWS
+#eg2 - "/home/linux/Desktop/test/chromedriver" <++ IN LINUX
+
+
+browser = webdriver.Chrome("chromedriver",chrome_options=chrome_options) 
 
 
 def main(browser):
