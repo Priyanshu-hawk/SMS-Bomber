@@ -1,3 +1,13 @@
+#/usr/bin/python3.8
+# For windows
+import sys
+
+try:
+    import selenium
+except:
+    print("[-] selenium module Not Found!\nRun 'pip install selenium'")
+    sys.exit()
+
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
