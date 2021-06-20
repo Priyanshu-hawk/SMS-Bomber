@@ -1,4 +1,5 @@
 # SMS-Bomber
+## For Windows
 Sms bomber using python
 
 # Installation Requirements:
